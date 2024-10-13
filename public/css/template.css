@@ -1,0 +1,769 @@
+:root {
+    --primary-color: #328E1A;
+    --secondary-color: #323232;
+    --danger-color: #dc3737;
+}
+
+@font-face {
+    font-family: "Verdana";
+    src: url("../fonts/verdana/verdana.ttf");
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.fab, .far{
+    font-weight: 900 !important;
+    margin-right: .5rem !important;
+    font-size: 27px !important;
+}
+
+/**************************************************************
+ *                          HEADER                            *
+**************************************************************/
+
+/* Permet d'espacer le haut de la page et le contenu de la section */
+section {
+    margin-top: 70px;
+}
+
+/* Class permettant de modifier la couleur de fond de la navbar */
+.navbar-color{
+    background-color: var(--primary-color);
+}
+.navbar-color-danger{
+    background-color: var(--danger-color);
+}
+
+/* Class permettant de gérer le style des texte au sein de la navbar */
+.navbar-text{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Class permettant de gérer l'interaction avec le passage de la souris */
+.navbar-text :hover{
+    color:var(--secondary-color);
+    text-decoration: none;
+}
+
+/* Class permtant de gérer le style du text de "Santé naturel" */
+.brand-text{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Class permettant de gérer la taille du logo JZ dans la navbar */
+.brand-logo{
+    width: 150px;
+}
+
+/* Récriture d'un classe bootstrap */
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+}
+
+/* Class permettant de gérer l'espace entre le logo JZ et le slogan de la marque */
+.brand-full{
+    padding-left: 10px;
+}
+
+.text-space {
+    margin-left: 30px;
+}
+
+.navbar-full-screen {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-flex;
+}
+
+/* Class permettant de gérer l'espace entre les icones et le texte de la navbar */
+.navbar-full{
+    font-size: 20px;
+    padding-right: 25px;
+    padding-left: 3px;
+}
+
+/* Class qui gère la navbar version téléphone */
+.navbar-phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-space{
+    padding: 0 25px;
+}
+
+.arianne-link{
+    color: var(--primary-color);
+}
+.burger{
+    padding-top:5px;
+}
+.main-content{
+    min-height: 93.5vh;
+}
+
+/**************************************************************
+ *                          FOOTER                            *
+**************************************************************/
+.footer-perso{
+    min-height: 6.5vh;
+}
+.footer-padding-left {
+    padding-left: 1rem;
+}
+
+/* Class qui enlève la forme de lien des éléments de la footer et les colories en gris clair */
+.footer-info{
+    text-decoration: none;
+    color:lightgrey;
+}
+
+/* Class qui permet d'afficher le footer version Pc tant qu'il y as la place */
+.footer-full{
+    display: flex;
+}
+
+/* Class qui permet d'afficher le selecteur de langue tant qu'on affiche le footer PC */
+.select-style {
+    appearance: none;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+/* Class qui permet d'afficher le selecteur de langue tant qu'on affiche le footer PC */
+.select-style option {
+    color: black;
+}
+
+/* Class qui permet d'afficher le selecteur de langue tant qu'on affiche le footer PC */
+.select-style:hover {
+    background: #4B4B4B;
+}
+
+/* Class qui permet d'afficher le selecteur de langue tant qu'on affiche le footer PC */
+.select-style:hover option {
+    background: white;
+}
+
+/**************************************************************
+ *                          BOUTONS                           *
+**************************************************************/
+
+/* Bouton composé d'une îcone et d'un text*/
+.btn-large {
+    width: 100%;
+    max-width: 450px;
+    font-size: 17px;
+    margin: 30px 0;
+    padding: 20px 75px;
+    background-color: var(--primary-color);
+}
+
+/* bouton avec la couleur principale */
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    font-size: 17px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    margin: 30px 0;
+    padding: 20px 0;
+}
+
+/* Class qui créer un bouton de taille moyenne */
+.btn-medium {
+    width: 100%;
+    max-width: 300px;
+    min-height: 50px;
+    font-size: 20px;
+    background-color: var(--primary-color);
+}
+
+/* Class qui créer un bouton entre moyen et petit*/
+.btn-small-plus {
+    width: 100%;
+    max-width: 275px;
+    height: 40px;
+    background-color: var(--primary-color);
+}
+
+/* Bouton composé d'une îcone ou d'un petit texte */
+.btn-small {
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 65px;
+    margin-left: 15px;
+}
+.btn-small-text {
+    width: 200px;
+    font-size: 17px;
+    color: white;
+    background-color: var(--primary-color);
+}
+.btn-large-danger {
+    width: 100%;
+    max-width: 450px;
+    font-size: 17px;
+    margin: 30px 0;
+    padding: 20px 75px;
+    background-color: var(--danger-color);
+}
+/* Afin que l'îcone soit blanche et dans le cas d'un btn-large à la même taille que le texte */
+.icon-white{
+    color: white;
+    font-size: 20px;
+}
+
+/* Pour augmenter la taille de l'îcone dans le cas d'un btn-small par exemple */
+.icon-size {
+    font-size: 30px;
+}
+
+/* Afin que le texte dans le btn-large soit blanc, plus gras, et plus gros */
+.btn-text {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Taille de la croix */
+.x-size{
+    font-size: 35px;
+}
+
+/**************************************************************
+*                            INDEX                            *
+**************************************************************/
+
+/* Augmente la taille du texte à la taille standart du site et le justifie */
+.text-index-size {
+    font-size: 20px;
+    text-align: justify;
+}
+
+/**************************************************************
+ *                           LISTE                            *
+**************************************************************/
+
+/* Class qui gère la hauteur de la barre de recherche */
+.list-search {
+    height: 50px;
+}
+
+/* Class qui permet de définir la taille de l'affichage de l'image*/
+.image-list-width {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* style des elements de la liste */
+.list-element-name {
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.list-element-name:hover {
+    color:var(--primary-color);
+}
+
+.list-element-separation {
+    border: 2px solid black;
+}
+
+/* mise en forme d'un cercle */
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 100px;
+    min-height: 100px;
+
+    background: lightgray;
+    border-radius: 50%;
+}
+
+.circle strong {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+.nav-link:hover {
+    color:var(--secondary-color);
+}
+
+/**************************************************************
+ *                           SHOW                            *
+**************************************************************/
+
+/*marge de la page show */
+.show-margin-left {
+    margin-left: 70px;
+}
+
+.show-margin-right {
+    margin-right: 30px;
+}
+
+/* taille de l'image */
+.image-show-size {
+    min-width: 100%;
+    max-height: 500px;
+}
+
+.col-left{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+
+/* taille du texte qui doit changer avec la page */
+.text-size {
+    font-size: 1rem;
+}
+
+/* style du show */
+.show-element-name {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.show-element-secondary {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.show-element-name:hover, .show-element-secondary:hover {
+    color: var(--primary-color);
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.btn-color {
+    background-color: var(--primary-color);
+}
+
+.btn-admin{
+    width: 150px;
+}
+
+/**************************************************************
+ *                          CREATE                            *
+**************************************************************/
+/* Class qui s'occupe de la taille des textes de la page Create*/
+.create-size{
+    font-size: 20px;
+}
+
+/* Style des labels */
+.label-name{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Style du check button */
+.check-size{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+.check-style{
+    height: 25px;
+    width: 55px !important;
+}
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/**************************************************************
+ *                         ACCUEIL                            *
+**************************************************************/
+
+/*** Image sous la navbar ***/
+
+/* Class qui met en forme l'image de fond qui est sous la navbar */
+.accueil-background{
+    background-image: url('../img/accueil-background.jpg');
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    min-height: 550px;
+}
+
+/* Class qui met en forme le texte qui est sur l'image */
+.accueil-text{
+    margin: 0 1rem;
+    color: white;
+    font-size: 80px;
+    font-weight: lighter;
+    text-shadow: var(--secondary-color) 5px 5px 5px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 15px;
+}
+
+/**************************************************************
+ *                     CONSEILLERS                            *
+**************************************************************/
+
+#map {
+    width: 100%;
+    height: 600px;
+}
+
+#mapShow {
+    width: 750px;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.btn-small-plus-conseiller {
+    width: 400px;
+    height: 40px;
+    background-color: var(--primary-color);
+}
+
+/**************************************************************
+ *                       EXPERTISE                            *
+**************************************************************/
+
+/* style de la modal */
+.modal-bg{
+    background-color: var(--primary-color);
+}
+
+.modal-btn{
+    background-color: white;
+}
+
+.modal-text{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* affichage des symptomes */
+.list-symptomes-group {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.list-symptomes-item {
+    display: inline-block;
+}
+
+.symptome-user{
+    font-size: 17px;
+}
+
+/* taille des width */
+.diagramme-width {
+    width: 320px;
+    height: 320px;
+}
+
+/* taille des textes */
+.text-show-size {
+    font-size: 20px;
+}
+
+.border-separator {
+    border-right: 3px solid lightgray;;
+}
+
+.rappels-juridiques{
+    font-style: italic;
+}
+
+/**************************************************************
+ *                      ACTUALITES                            *
+**************************************************************/
+
+/* gestion des images dans actualités */
+.actualite-image-width {
+    max-width: 50%;
+}
+
+.actualite-image-show-width {
+    max-width: 90%;
+}
+
+.actualite-image-p-width {
+    max-width: 300px;
+}
+
+/**************************************************************
+ *                  RESPONSIVE TABLETTES                      *
+**************************************************************/
+@media screen and (max-width:1345px){
+    /* On ne change pas le style de sur mobile */
+    /* .navbar-full{
+        display: none;
+        margin: 0 20px;
+    }
+
+    .nav-space-full{
+        padding: 0 25px;
+    } */
+
+    .brand-logo{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:1390px) {
+    .footer-info {
+        font-size: 15px;
+    }
+
+    .footer-padding-left {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .footer-full{
+        flex-direction: column;
+        line-height: 2;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .15rem;
+        padding-left: .5rem;
+    }
+
+    .mb-conseillers-horaires {
+        margin-bottom: 20px;
+    }
+
+    /* On garde le header classique sur mobile */
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 901px){
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+
+/**************************************************************
+ *                  RESPONSIVE MOBILES                        *
+**************************************************************/
+@media screen and (max-width:900px){
+    .space-between-footer {
+        min-height: 10%;
+        height: 30px;
+    }
+
+    /* On garde le header classique sur mobile */
+    /* .navbar-full-screen{
+        display: none;
+    } */
+
+    .navbar-phone{
+        display: none;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .text-space {
+        margin-left: 110px;
+    }
+
+    .footer-full{
+        padding: 5px 0;
+    }
+
+    .footer-color{
+        background-color: var(--secondary-color);
+    }
+
+    /* A supprimer pour activer la barre de navigation pour téléphone */
+    .footer-phone{
+        display: none;
+    }
+
+    .space-footer-full-phone {
+        display: none; /* A supprimer pour activer la barre de navigation pour téléphone */
+        min-height: 80px;
+        height: 70px;
+    }
+
+    .phone-fixed-bottom {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: var(--primary-color);
+    }
+
+    .brand-size {
+        width: 150px;
+    }
+
+    .icon-size {
+        font-size: 30px;
+    }
+
+    .col-left {
+        justify-content: center;
+    }
+
+    .row-show{
+        display: block;
+    }
+
+    .show-margin-right {
+        margin-right: 0;
+    }
+
+    .row-symptome {
+        display: grid;
+        justify-content: center;
+    }
+
+    .btn-symptome {
+        margin: 5px 0;
+    }
+
+    .border-separator {
+        border-right: 0;
+    }
+}
+
+@media screen and (min-width:900px){
+
+    .navbar-phone{
+        display: none;
+    }
+
+    .footer-phone{
+        display: none;
+    }
+
+    .footer-color{
+        background-color: var(--secondary-color);
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .accueil-text {
+        font-size: 65px;
+        letter-spacing: 5px;
+    }
+
+    .row-conseillers-code {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .text-space {
+        margin-left: 80px;
+    }
+
+    .nav-space {
+        padding: 0 10px;
+    }
+
+    /* On garde le header classique sur mobile */
+    /* .nav-link {
+        padding: 0;
+    } */
+
+    .icon-size {
+        font-size: 24px;
+    }
+
+    .row-conseillers-localisation {
+        display: grid;
+        justify-content: center;
+    }
+
+    .footer-padding-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 751px) {
+    .row-conseillers-show {
+        display: block;
+    }
+
+    #mapShow {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .btn-large, .btn-large-danger {
+        width: 100%;
+        max-width: 405px;
+        margin: 20px 0;
+        padding: 20px 50px;
+    }
+
+    .pe-phone {
+        padding-right: 0!important;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .card-footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .accueil-text {
+        font-size: 40px;
+    }
+
+    .brand-full {
+        display: none;
+    }
+}

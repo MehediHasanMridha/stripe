@@ -1,0 +1,1011 @@
+:root {
+    --primary-color: #912c28;
+    --secondary-color: #323232;
+}
+
+@font-face {
+    font-family: "Verdana";
+    src: url("../fonts/verdana/verdana.ttf");
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.main-content{
+    min-height: 93.5vh;
+}
+
+/**************************************************************
+ *                          HEADER                            *
+**************************************************************/
+
+/* Permet d'espacer le haut de la page et le contenu de la section */
+section {
+    margin-top: 70px;
+}
+
+/* Class permettant de modifier la couleur de fond de la navbar */
+.navbar-color{
+    background-color: var(--primary-color);
+}
+
+/* Class permettant de gérer le style des texte au sein de la navbar */
+.navbar-text{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Class permettant de gérer l'interaction avec le passage de la souris */
+.navbar-text :hover{
+    color:var(--secondary-color);
+    text-decoration: none;
+}
+
+/* Class permtant de gérer le style du text de "Santé naturel" */
+.brand-text{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Class permettant de gérer la taille du logo JZ dans la navbar */
+.brand-logo{
+    width: 150px;
+}
+
+/* Récriture d'un classe bootstrap */
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Class permettant de gérer l'espace entre le logo JZ et le slogan de la marque */
+.brand-full{
+    padding-left: 10px;
+}
+
+/* Class qui espace le texte afin que rien ne soit collé dans le hearder */
+.text-space {
+    margin-left: 30px;
+}
+
+/* class qui affiche la navbarversion PC par defaut */
+.navbar-full-screen {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-flex;
+}
+
+/* Class permettant de gérer l'espace entre les icones et le texte de la navbar */
+.navbar-full{
+    font-size: 20px;
+    padding-right: 25px;
+    padding-left: 3px;
+}
+
+.arrow-space-full{
+    padding-top: 5px;
+}
+
+/* Class qui gère la navbar version téléphone */
+.navbar-phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Class qui gère l'espacement entre les icones du header */
+.nav-space{
+    padding: 0 25px;
+}
+.burger{
+    padding-top: 2px;
+}
+/**************************************************************
+*                          FOOTER                             *
+**************************************************************/
+
+.footer-perso{
+    min-height: 6.5vh;
+}
+
+/* Class qui gere l'espace a gauche du footer */
+.footer-padding-left{
+    padding-left: 1rem;
+}
+
+/* Class qui enlève la forme de lien des éléments de la footer et les colories en gris clair */
+.footer-info{
+    text-decoration: none;
+    color:lightgrey;
+}
+
+/* Class qui permet d'afficher le footer version Pc tant qu'il y as la place */
+.footer-full{
+    display: flex;
+}
+
+/* Class qui permet d'afficher le selecteur de langue tant qu'on affiche le footer PC */
+.select-style {
+    appearance: none;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+/* Class qui permet d'afficher le selecteur de langue tant qu'on affiche le footer PC */
+.select-style option {
+    color: black;
+}
+
+/* Class qui permet d'afficher le selecteur de langue tant qu'on affiche le footer PC */
+.select-style:hover {
+    background: #4B4B4B;
+}
+
+/* Class qui permet d'afficher le selecteur de langue tant qu'on affiche le footer PC */
+.select-style:hover option {
+    background: white;
+}
+
+/**************************************************************
+ *                          BOUTONS                           *
+**************************************************************/
+
+/* Bouton composé d'une îcone et d'un text*/
+.btn-large {
+    width: 100%;
+    max-width: 450px;
+    font-size: 17px;
+    margin: 30px 0;
+    padding: 20px 80px;
+    background-color: var(--primary-color);
+}
+/* bouton avec la couleur principale */
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    font-size: 17px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    margin: 30px 0;
+    padding: 20px 0;
+}
+
+/* Class qui créer un bouton de taille moyenne */
+.btn-medium {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    background-color: var(--primary-color);
+}
+
+/* Class qui créer un bouton entre moyen et petit*/
+.btn-small-plus {
+    width: 275px;
+    /* height: 40px; */
+    background-color: var(--primary-color);
+}
+
+/* Bouton composé d'une îcone ou d'un petit texte */
+.btn-small {
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 65px;
+    margin-left: 15px;
+}
+
+/* bouton avec la couleur principale fermeture*/
+.btn-primary-close {
+    font-size: 17px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color:white;
+    padding:5px;
+    opacity: 98%;
+    vertical-align: middle;
+}
+.btn-primary-close:hover {
+    font-size: 17px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color:white;
+    opacity: 100%;
+}
+
+/* Afin que l'îcone soit blanche et dans le cas d'un btn-large à la même taille que le texte */
+.icon-white{
+    color: white;
+    font-size: 20px;
+}
+
+/* Pour augmenter la taille de l'îcone dans le cas d'un btn-small par exemple */
+.icon-size {
+    font-size: 30px;
+}
+
+/* Afin que le texte dans le btn-large soit blanc, plus gras, et plus gros */
+.btn-text{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Taille de la croix */
+.x-size{
+    font-size: 35px;
+}
+
+/* Class qui gère l'aspect des bouton d'ajout dans les script admin "+" */
+.add-tr{
+    height: 40px;
+    width: 40px;
+}
+
+/* Class qui gère l'aspect des bouton d'ajout dans les script admin "+" */
+.plus-size{
+    font-size: 15px;
+}
+
+/* Class qui gère l'aspect des bouton d'ajout dans les script admin "+" */
+.btn-success {
+    color: #fff;
+    background-color: var(--primary-color)!important;
+    border-color: var(--primary-color)!important;
+}
+
+/* Class qui gère l'aspect des bouton de suppresion dans les script admin "poubelle" */
+.supp-tr{
+    height: 40px;
+}
+
+/* Class qui gère l'aspect des bouton de suppresion dans les script admin "poubelle" */
+.trash-size{
+    font-size: 15px;
+}
+
+.btn-small-plus-conseiller {
+    width: 400px;
+    height: 40px;
+    background-color: var(--primary-color);
+}
+/**************************************************************
+ *                         ACCUEIL                            *
+**************************************************************/
+
+/*** Image sous la navbar ***/
+
+/* Class qui met en forme l'image de fond qui est sous la navbar */
+.accueil-background{
+    background-image: url('../img/accueil-background.jpg');
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    min-height: 550px;
+}
+
+/* Class qui met en forme le texte qui est sur l'image */
+.accueil-text{
+    margin: 0 1rem;
+    color: white;
+    font-size: 80px;
+    font-weight: lighter;
+    text-shadow: var(--secondary-color) 5px 5px 5px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 15px;
+}
+
+/**************************************************************
+ *                      INDEX / LISTE                         *
+**************************************************************/
+
+/* Class qui permet de centrer le text titre dans les indexde la partie admin */
+.index-name-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    min-height: 250px;
+}
+
+/* Class qui gère la taille de la police et sa couleur pour le titre */
+.index-name-text{
+    color:black;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Class qui gère la hauteur de la barre de recherche */
+.list-search {
+    height: 50px;
+}
+
+/* Class qui gère l'aspect du titre de la liste dans l'index */
+.liste-titre{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Class qui gère l'aspect du text contenue dans la liste */
+.liste-text{
+    font-size: 20px;
+    border-spacing: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Class qui définie la cooler du hoover des textes dans la liste*/
+.liste-text:hover{
+    color:var(--primary-color)
+}
+
+/* Class qui définie la couleur des bordure du cadre de la liste */
+.bord-color{
+    color: #DBDCE0;
+}
+
+/* Class qui donne son style au bouton d'ajout dans les index admin*/
+.btn-add{
+    background-color: var(--primary-color);
+    color: white;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    height: 70px;
+    width: 70px;
+}
+.add-icon{
+    font-size: 25px;
+}
+
+/**************************************************************
+ *                           SHOW                             *
+**************************************************************/
+/* Class qui permet de décaler le text de show par rapport au bord gauche de la fenetre */
+.show-margin-left {
+    margin-left: 70px;
+}
+
+/* Class qui permet de décaler le text de show par rapport au bord droite de la fenetre*/
+.show-margin-right {
+    margin-right: 30px;
+}
+
+/* Class qui permet de définir la taille de l'affichage de l'image*/
+.image-show-size {
+    min-width: 100%;
+    max-height: 500px;
+}
+
+/* Class qui aligne les éléments a gauche */
+.col-left{
+    margin-right: 50px;
+}
+
+/* Class qui affiche les nom des élément dans les pages show*/
+.show-element-name {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.show-element-secondary  {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.show-element-name:hover, .show-element-secondary:hover {
+    color: var(--primary-color);
+}
+/* Class qui permet de justifier le texte */
+.text-justify {
+    text-align: justify;
+}
+
+/* Class qui gère la taille de l'affichage d'une imag en thumbnail */
+.thumbnail-width{
+    width: 300px;
+}
+
+/* Class gérant la taille de la enetre de google map */
+#mapShow {
+    width: 750px;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+/* Class qui permet de faire des encadré rond*/
+.circle-status {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+/**************************************************************
+ *                          CREATE                            *
+**************************************************************/
+
+/* Messages d'erreur */
+.erreur-formulaire-admin{
+    font-weight: bold;
+    color: red;
+}
+
+/* Class qui s'occupe de la taille des textes de la page Create*/
+.create-size{
+    font-size: 20px;
+}
+
+/* Style des labels */
+.label-name{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Style du check button */
+.check-size{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+.check-style{
+    height: 25px;
+    width: 55px !important;
+}
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Style de la du bouton edit */
+.edit-size{
+    font-size: 20px;
+}
+
+/* Style de la preview d'image */
+.image-preview {
+    width: 256px;
+    border: 1px solid black;
+}
+
+/* Bouton d'erreur */
+.required {
+    color: red;
+    vertical-align: top;
+}
+
+/* Stye des informations de details dans les labels */
+.label-detail {
+    color: #636b6f;
+    font-size: 16px;
+}
+
+/**************************************************************
+ *                          RECHERCHE                       *
+**************************************************************/
+/* Hauteur de la bafre de recherche */
+.form-search {
+    height: 50px;
+}
+
+/* Style du bouton de formulaire  */
+.btn-form-color {
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 65px;
+    margin-left: 15px;
+}
+
+/* Couleur du texte dans recherche */
+.text-style {
+    color: #323232;
+}
+
+.text-style:hover {
+    color: var(--primary-color);
+}
+
+/* Taille minimum du footer */
+.phone-footer-space {
+    min-height: 5rem;
+}
+
+/* Espace dans les tableaux */
+.table-space {
+    width: 94%;
+    margin-left: 18px;
+}
+
+/* style des recherches */
+.table1-id {
+    width: 10%;
+}
+
+.table1-nom {
+    width: 60%;
+}
+
+.table1-nb {
+    width: 10%;
+    margin: 0 15px;
+}
+
+.table2-nom {
+    width: 10%;
+}
+
+.table2-zh {
+    width: 30%;
+}
+
+.table2-fr {
+    width: 60%;
+}
+/**************************************************************
+ *                          LOADING                           *
+**************************************************************/
+
+/* mise en place de l'aprence du chargement de la page recherche*/
+.loading {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.loading-content {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    border: 16px solid #323232; /* Light gray */
+    border-top: 16px solid var(--primary-color); /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/**************************************************************
+ *                          TRADUCTION                       *
+**************************************************************/
+
+/***************
+*    INDEX     *
+****************/
+
+/* empeche l'index d'etre collé a la navbar*/
+.no-space-top {
+    margin-top: 3%;
+}
+
+/* gère la taile du titre */
+.text-titre {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* gère la couleur du text */
+.text-color {
+    color: #323232;
+}
+
+.text-color:hover {
+    color: var(--primary-color);
+}
+
+.btn-color {
+    background-color: var(--primary-color);
+}
+
+
+/***************
+*     SHOW     *
+****************/
+
+/* barre de progression de traduction */
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-right: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-moz-progress-bar {
+    background-color: #eee;
+    border-right: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* taille du texte qui doit changer avec la page */
+.text-size {
+    font-size: 1rem;
+}
+
+.th-legend {
+    color:  var(--primary-color);
+}
+
+/* styles des clées de traduction */
+.traduction-code-width {
+    min-width: 10%;
+    width: 10%;
+    max-width: 10%;
+}
+
+.traduction-cle-width {
+    min-width: 20%;
+    width: 20%;
+    max-width: 20%;
+}
+
+.traduction-texte-width {
+    min-width: 70%;
+    width: 70%;
+    max-width: 70%;
+}
+
+.th-page {
+    color: var(--primary-color);
+}
+
+.text-border-space-right {
+    margin-right: 10px;
+}
+
+/* style d'un bouton utilisé que dans traduction */
+.btn-admin{
+    width: 150px;
+}
+
+.arrow-scroll {
+    position: fixed;
+    font-size: 50px;
+    bottom: 35px;
+    right: -100px;
+    opacity: 0.9;
+}
+
+.icon-color {
+    color: var(--primary-color);
+}
+
+/***************
+*     EDIT     *
+****************/
+
+/* gestion des icons */
+.add-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.plus-size {
+    font-size: 15px;
+}
+
+.supp-icon {
+    background-color: #dc3545;
+    height: 40px;
+}
+
+.trash-size {
+    font-size: 15px;
+}
+
+.edit-size {
+    font-size: 20px;
+}
+
+/* Gestion du tableau */
+.th-size1 {
+    width: 15%;
+}
+
+.th-size2 {
+    width: 30%;
+}
+
+.th-size3 {
+    width: 75%;
+}
+
+.btn-edit{
+    width: 250px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/**************************************************************
+ *                  RESPONSIVE TABLETTES                      *
+**************************************************************/
+@media screen and (max-width:1525px){
+    /* On ne change pas le style de sur mobile */
+    /* .navbar-full{
+        display: none;
+        margin: 0 20px;
+    }
+
+    .nav-space-full{
+        padding: 0 25px;
+    } */
+
+    .arrow-space-full{
+        padding-top: 0px;
+    }
+
+    .brand-logo{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:1390px) {
+    .footer-info {
+        font-size: 15px;
+    }
+
+    .footer-padding-left {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .footer-full{
+        flex-direction: column;
+        line-height: 2;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .15rem;
+        padding-left: .5rem;
+    }
+
+    .mb-conseillers-horaires {
+        margin-bottom: 20px;
+    }
+
+    /* On garde le header classique sur mobile */
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 901px){
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+
+/**************************************************************
+ *                  RESPONSIVE MOBILES                        *
+**************************************************************/
+@media screen and (max-width:950px){
+    .space-between-footer {
+        min-height: 10%;
+        height: 30px;
+    }
+
+    /* On garde le header classique sur mobile */
+    /* .navbar-full-screen{
+        display: none;
+    } */
+
+    .navbar-phone{
+        display: none;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .text-space {
+        margin-left: 110px;
+    }
+
+    .footer-full{
+        padding: 5px 0;
+    }
+
+    .footer-color{
+        background-color: var(--secondary-color);
+    }
+
+    /* A supprimer pour activer la barre de navigation pour téléphone */
+    .footer-phone{
+        display: none;
+    }
+
+    .space-footer-full-phone {
+        display: none; /* A supprimer pour activer la barre de navigation pour téléphone */
+        min-height: 80px;
+        height: 70px;
+    }
+
+    .phone-fixed-bottom {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: var(--primary-color);
+    }
+
+    .brand-size {
+        width: 150px;
+    }
+
+    .icon-size {
+        font-size: 30px;
+    }
+
+    .row-show{
+        display: block;
+    }
+
+    .show-margin-right {
+        margin-right: 0;
+    }
+
+    .row-symptome {
+        display: grid;
+        justify-content: center;
+    }
+
+    .btn-symptome {
+        width: 400px;
+        margin: 5px 0;
+    }
+
+    .arrow-scroll {
+        bottom: 90px;
+    }
+}
+
+@media screen and (min-width:950px){
+
+    .arrow{
+        display: none;
+    }
+
+    .navbar-phone{
+        display: none;
+    }
+
+    .footer-phone{
+        display: none;
+    }
+
+    .footer-color{
+        background-color: var(--secondary-color);
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .accueil-text {
+        font-size: 45px;
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .row-conseillers-code {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .text-space {
+        margin-left: 80px;
+    }
+
+    .nav-space {
+        padding: 0 10px;
+    }
+
+    /* On garde le header classique sur mobile */
+    /* .nav-link {
+        padding: 0;
+    } */
+
+    .icon-size {
+        font-size: 24px;
+    }
+
+    .row-conseillers-localisation {
+        display: grid;
+        justify-content: center;
+    }
+
+    .footer-padding-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    .row-conseillers-show {
+        display: block;
+    }
+
+    #mapShow {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .btn-large {
+        width: 100%;
+        max-width: 405px;
+        padding: 20px 60px;
+    }
+
+    .pe-phone {
+        padding-right: 0!important;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .card-footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .accueil-text {
+        font-size: 30px;
+    }
+
+    .brand-full {
+        display: none;
+    }
+}
